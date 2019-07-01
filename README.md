@@ -7,3 +7,4 @@ Program outputs the predicted depth, distance, height and width, and angle from 
 
 
 
+https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_1024x320.zip
