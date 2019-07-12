@@ -23,7 +23,9 @@ Python 3.5.1 or later
 
 **OpenCV**
 >pip3 install opencv-python
+
 >pip3 install cv2
+
 **numpy**
 >pip3 install numpy
 
@@ -32,6 +34,7 @@ Python 3.5.1 or later
 
 **PIL**
 >pip3 install PIL
+
 **ImageAI**
 >pip3 install ImageAi
 
