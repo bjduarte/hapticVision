@@ -40,8 +40,8 @@ Python 3.5.1 or later
 **Pytorch**
 >https://pytorch.org/
 
-**Karos**
->pip3 install Karos
+**Karas**
+>pip3 install Karas
 
 Running the program!
 -----
