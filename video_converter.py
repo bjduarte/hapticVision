@@ -11,13 +11,29 @@ def convertVideoToPictures(video_name):
     count = 0
 
     while success:
-      cv2.imwrite("assets//videos//frame%d.jpg" % count, image)     # save frame as JPEG file
+      cv2.imwrite("assets//videos//%d.jpg" % count, image)     # save frame as JPEG file
       success,image = vidcap.read()
       print('Read a new frame: ', success)
       count += 1
     return(count)
 
-def getPicturesFromVideo(video_name):
+def createVideoFromPicture(location,picture_names,output,width,height,fps):
+    size = (width, height)
+
+    out = cv2.VideoWriter(output,cv2.VideoWriter_fourcc(*'DIVX'), fps, size)
+    amount_pictures = findCount()
+    frame_array = []
+
+
+    for i in range(amount_pictures):
+        frame_array.append(cv2.imread(location + picture_names + '%d.jpg' % i))
+
+    for i in range(len(frame_array)):
+        # writing to a image array
+        out.write(frame_array[i])
+    out.release()
+
+def convertVideoToPictures_Fast(video_name):
     if not os.path.exists('assets//videos'):
         os.mkdir('assets//videos')
 

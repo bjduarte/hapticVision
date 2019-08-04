@@ -143,13 +143,13 @@ def test_simple(args):
 
     print('-> Done!')
 
-def test_simple_ethan(image_path,model_name):
+def test_simple_inputs(image_path,model_name,output_path,cuda_is_available):
     """Function to predict for a single image or folder of images
     """
     assert model_name is not None, \
         "You must specify the --model_name parameter; see README.md for an example"
 
-    if torch.cuda.is_available():
+    if cuda_is_available:
         device = torch.device("cuda")
     else:
         device = torch.device("cpu")
@@ -187,13 +187,15 @@ def test_simple_ethan(image_path,model_name):
     if os.path.isfile(image_path):
         # Only testing on a single image
         paths = [image_path]
-        output_directory = os.path.dirname(image_path)
+        #output_directory = os.path.dirname(image_path)
+        output_directory = os.path.dirname(output_path)
     elif os.path.isdir(image_path):
         # Searching folder for images
         paths = glob.glob(os.path.join(image_path, '*.{}'.format('.jpg')))
         output_directory = image_path
     else:
         raise Exception("Can not find args.image_path: {}".format(image_path))
+
 
     #print("-> Predicting on {:d} test images".format(len(paths)))
 
@@ -238,6 +240,5 @@ def test_simple_ethan(image_path,model_name):
     #print('-> Done!')
 
 if __name__ == '__main__':
-    #args = parse_args()
-    #test_simple(args)
-    test_simple_ethan('assets\\test_image.jpg','mono_1024x320')
+    args = parse_args()
+    test_simple(args)
