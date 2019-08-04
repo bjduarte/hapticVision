@@ -40,8 +40,8 @@ Python 3.5.1 or later
 **Pytorch**
 >https://pytorch.org/
 
-**Karas**
->pip3 install Karas
+**Keras**
+>pip3 install Keras
 
 Running the program!
 -----
