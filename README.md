@@ -1,6 +1,5 @@
 # hapticVision
 Video object detection and depth recognition for hapwrap technology.
-Sana sucks
 
 Requirements
 -----
