@@ -1,10 +1,10 @@
 # hapticVision
 Video object detection and depth recognition for hapwrap technology.
-
+Sana sucks
 
 Requirements
 -----
-This program uses two different Machine Learning Models for depth perception. Download each and place it in the models folder.
+This program uses two different Machine Learning Models for depth perception. Within the hapticVision main folder create a new folder called "models".  Download both Monodepth2 and ImageAI and place it in the newly created models folder.
 
 [Click Here To Download the Models](https://drive.google.com/drive/folders/1xttyp-wezKU9RcIfaCJewzUEHkljIsBt?usp=sharing)
 
