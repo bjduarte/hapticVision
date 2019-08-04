@@ -40,6 +40,9 @@ Python 3.5.1 or later
 **Pytorch**
 >https://pytorch.org/
 
+**Karos**
+>pip3 install Karos
+
 Running the program!
 -----
 Run the main python method. Place the wanted video inside the video folder and change the video_name variable to the name of the video.
