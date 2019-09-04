@@ -48,7 +48,7 @@ Running the program!
 Run the main python method. Place the wanted video inside the video folder and change the video_name variable to the name of the video.
 
 
-Program outputs the predicted depth, distance, height and width, and angle from camera of detected objects. Note, the program has problems detecing these outputs for objects within 10 feet of the Camera.
+Program outputs the predicted depth, distance, height and width, and angle from camera of detected objects. Note, the program is slightly innaccurate for outputs within 10 feet of the Camera.
 
 
 
