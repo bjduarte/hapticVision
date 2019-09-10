@@ -3,7 +3,8 @@ Video object detection and depth recognition for hapwrap technology.
 
 ![Alt Text](https://media.giphy.com/media/UrnKsm0Xj0lMsFYebR/giphy.gif)
 -----
-![Alt Text](https://media.giphy.com/media/XDFHWBfwplKtwsEYXI/200w_d.gif)
+![Alt Text](https://media.giphy.com/media/XDFHWBfwplKtwsEYXI/giphy.gif)
+-----
 Requirements
 -----
 This program uses two different Machine Learning Models for depth perception. Within the hapticVision main folder create a new folder called "models".  Download both Monodepth2 and ImageAI and place it in the newly created models folder.
