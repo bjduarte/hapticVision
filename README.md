@@ -2,6 +2,7 @@
 Video object detection and depth recognition for hapwrap technology.
 
 ![Alt Text](https://media.giphy.com/media/UrnKsm0Xj0lMsFYebR/giphy.gif)
+-----
 ![Alt Text](https://media.giphy.com/media/XDFHWBfwplKtwsEYXI/200w_d.gif)
 Requirements
 -----
